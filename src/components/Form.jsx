@@ -34,7 +34,7 @@ const Form = () => {
     const city_name = document.getElementById("city_name");
 
     try {
-      const api_key = process.env.REACT_APP_API_KEY;
+      const api_key = "36696846a43785477093adf0a240e57a";
 
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city_name.value}&units=metric&appid=${api_key}`;
       const res = await axios.get(url);
